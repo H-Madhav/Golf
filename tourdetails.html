@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Golf Academy</title>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="headerContainer clear">
+	        <div class="navbarHeader">
+	    		<img src="img/logo.png">
+	    	</div>
+	    	<nav class="nav">
+	    		<ul>
+	    		    <li>
+	    		        <a href="index.html">Home</a>
+	    		    </li>
+	    			<li>
+	    				<a href="tournament.html">Tournament</a>
+	    			</li>
+	    			<li>
+	    			    <a href="#">Process</a>
+	    			</li>
+	    			<li>
+	    			    <a href="#">Coaches</a>
+	    			</li>
+	    			<li>
+	    			    <a href="#">Membership</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">Blog</a>
+	    				<ul>
+	    					<li><a href="#">Post List</a></li>
+	                        <li><a href="#">Post Details</a></li>
+	    				</ul>
+	    			</li>
+	    			<li>
+	    			    <a href="#">Contact</a>
+	    			</li>
+	    		</ul>
+	    	</nav>
+
+	    	<nav class="nav-right">
+	    		<ul>
+	    			<li>
+	    			    <a href="#" class="signUp">Sign Up Now</a>
+	    			</li>
+	    		</ul>
+	    	</nav>
+    	</div>
+    </header>
+
+    <div class="detailImg">
+        <img src="img/tourdetailImg.jpg" alt="tourdetails">
+        <button id="viewImg">View Images</button>
+    </div>
+
+    <div id="imgModal" class="modal">
+        <div class="modalWrapper">
+            <button id="close"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+            <div class="modal-img">
+                <div>
+                    <img src="/img/service_bg.jpg" alt="Golf Image" style="width: 700px; height: 400px">
+                </div>
+                <div>
+                    <img src="/img/slide1.jpg" alt="Golf Image" style="width: 700px; height: 400px">
+                </div>
+                <div>
+                    <img src="/img/slide1.jpg" alt="Golf Image" style="width: 700px; height: 400px">
+                </div>
+                <div>
+                    <img src="/img/slide1.jpg" alt="Golf Image" style="width: 700px; height: 400px">
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="infoPan">
+        <div class="mainPan">
+            <div class="mainInfo">
+                <h3>Safeway Open</h3>
+                <p>Silverado Resort and Spa North, Napa, CA • Purse: $6,000,000</p>
+                <p><b>Defending Champion:</b> Brendan Steele $1,080,000</p>
+                <p><b>Network:</b> GOLF, NBC</p>
+            </div>
+            <div class="controlPan">
+                <ul>
+                    <li class="pan"><a href="#score">Score</a></li>
+                    <li class="pan"><a href="#draw&Time">Draw &amp; Time</a></li>
+                    <li class="pan"><a href="#location">Location</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidePan">
+            <div class="bookNow">
+                <h3>Safeway Open: <span>Ticket</span></h3>
+                <form>
+                    <div>
+                        <label for="name"><i class="fa fa-user" aria-hidden="true"></i></label>
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+
+                    <div>
+                        <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <label for="phone"><i class="fa fa-phone" aria-hidden="true"></i></label>
+                        <input type="text" name="phone" placeholder="phone">
+                    </div>
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="controlledPan">
+        <div class="panView" id="score">
+            <div class="panViewSelect">
+                <h3>Score Bord</h3>
+                <select>
+                    <option>Round1</option>
+                    <option>Round2</option>
+                    <option>Round3</option>
+                    <option>Round4</option>
+                </select>
+            </div>
+            <div class="pdfHolder">
+                <iframe src="http://via.placeholder.com/1200x400" width="100%" height="400px"></iframe>
+            </div>
+        </div>
+
+        <div class="panView" id="draw&Time">
+            <div class="panViewSelect">
+                <h3>Draw &amp; Time</h3>
+                <select>
+                    <option>Round1</option>
+                    <option>Round2</option>
+                    <option>Round3</option>
+                    <option>Round4</option>
+                </select>
+            </div>
+            <div class="pdfHolder">
+                <iframe src="http://via.placeholder.com/1200x400" width="100%" height="400px"></iframe>
+            </div>
+        </div>
+
+        <div class="panView" id="location">
+            <div class="panViewSelect">
+                <h3>Location</h3>
+            </div>
+            <div class="pdfHolder">
+                <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAMWDfaNjW8YaRzzpiVgpkXMCmJmSWKQ4M&q=Space+Needle,Seattle+WA" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+    	<div class="footerWrapper">
+    		<img src="img/logo.png">
+    		<ul>
+	        	<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+	        	<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	        	<li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+	        	<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>Copyright &copy; 2017 All Rights Reserved | Powered by <a href="#"> nodal.direct</a></p>
+    	</div>
+    </footer>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src='js/app.js'></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+		    $('.modal-img').slick();
+            $('.slick-prev').html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+            $('.slick-next').html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+        });
+    </script>
+</body>
+</html>
