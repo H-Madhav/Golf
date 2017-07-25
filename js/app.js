@@ -25,10 +25,15 @@ if (defaultOpen) {
     defaultOpen.click();
 };
 
-viewImg.onclick = function(){
+if (viewImg) {
+   viewImg.onclick = function(){
     imgModal.style.height = "100%";
 };
+};
 
-close.onclick = function(){
+if (close) {
+ close.onclick = function(){
     imgModal.style.height = "0";
 };
+};
+
